@@ -27,8 +27,11 @@ sys-power/acpi
 sys-process/htop
 sys-process/iotop
 www-client/elinks
+x11-apps/xsetroot
 x11-base/xorg-server
 x11-libs/libXft
+x11-misc/dmenu
+x11-misc/redshift
 x11-misc/slock
 x11-terms/st
 x11-wm/dwm
