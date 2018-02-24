@@ -1,0 +1,9 @@
+# required by app-editors/neovim-0.2.2-r1::gentoo
+# required by app-editors/neovim (argument)
+=dev-libs/msgpack-1.1.0 ~amd64
+# required by sys-fs/dfc (argument)
+=sys-fs/dfc-3.0.5-r1 ~amd64
+# required by app-editors/neovim (argument)
+=app-editors/neovim-0.2.2-r1 ~amd64
+# required by app-misc/abduco (argument)
+=app-misc/abduco-0.6 ~amd64

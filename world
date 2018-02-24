@@ -7,15 +7,16 @@ app-misc/trash-cli
 app-portage/gentoolkit
 dev-vcs/git
 dev-vcs/rcs
+media-fonts/dejavu
 media-sound/alsa-utils
 net-analyzer/iftop
 net-analyzer/netcat
+net-analyzer/speedtest-cli
 net-dns/bind-tools
 net-misc/dhcpcd
 net-misc/socat
 net-wireless/iw
 net-wireless/wpa_supplicant
-sys-apps/lm_sensors
 sys-boot/grub:2
 sys-fs/dfc
 sys-fs/exfat-utils
@@ -26,3 +27,8 @@ sys-power/acpi
 sys-process/htop
 sys-process/iotop
 www-client/elinks
+x11-base/xorg-server
+x11-libs/libXft
+x11-misc/slock
+x11-terms/st
+x11-wm/dwm
