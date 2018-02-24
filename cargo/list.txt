@@ -1,0 +1,4 @@
+exa v0.8.0:
+    exa
+ripgrep v0.8.1:
+    rg
