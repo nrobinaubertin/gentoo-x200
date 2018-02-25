@@ -7,3 +7,34 @@
 =app-editors/neovim-0.2.2-r1 ~amd64
 # required by app-misc/abduco (argument)
 =app-misc/abduco-0.6 ~amd64
+# allow testing for firefox
+=www-client/firefox-58.0.1 ~amd64
+# required by x11-libs/gdk-pixbuf-2.36.11::gentoo
+# required by www-client/firefox-58.0.1::gentoo
+# required by @selected
+# required by @world (argument)
+=media-libs/libpng-1.6.34 ~amd64
+# required by www-client/firefox-58.0.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/nss-3.35 ~amd64
+# required by virtual/rust-1.23.0::gentoo
+# required by dev-util/cargo-0.24.0::gentoo
+# required by www-client/firefox-58.0.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-lang/rust-1.23.0-r1 ~amd64
+# required by dev-util/cargo-0.24.0::gentoo
+# required by www-client/firefox-58.0.1::gentoo
+# required by @selected
+# required by @world (argument)
+=virtual/rust-1.23.0 ~amd64
+# required by www-client/firefox-58.0.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-libs/nspr-4.18 ~amd64
+# required by dev-lang/rust-1.23.0-r1::gentoo[-extended]
+# required by www-client/firefox-58.0.1::gentoo
+# required by @selected
+# required by @world (argument)
+=dev-util/cargo-0.24.0 ~amd64

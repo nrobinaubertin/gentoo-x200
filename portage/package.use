@@ -4,3 +4,17 @@
 # required by app-editors/neovim-0.2.2-r1::gentoo
 # required by app-editors/neovim (argument)
 >=dev-lua/lpeg-1.0.1 luajit
+# required by www-client/firefox-52.6.0::gentoo
+# required by www-client/firefox (argument)
+>=media-libs/libpng-1.6.29 apng
+# required by x11-libs/gtk+-3.22.19::gentoo
+# required by x11-themes/adwaita-icon-theme-3.24.0::gentoo
+# required by virtual/freedesktop-icon-theme-0-r3::gentoo
+# required by www-client/firefox-52.6.0::gentoo
+# required by www-client/firefox (argument)
+>=x11-libs/cairo-1.14.12 X
+# required by www-client/firefox-52.6.0::gentoo
+# required by www-client/firefox (argument)
+>=dev-lang/python-2.7.14-r1:2.7 sqlite
+# firefox custom use
+>=www-client/firefox-58.0.1 eme-free -gmp-autoupdate -neon 

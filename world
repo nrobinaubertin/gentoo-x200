@@ -27,6 +27,7 @@ sys-power/acpi
 sys-process/htop
 sys-process/iotop
 www-client/elinks
+www-client/firefox
 x11-apps/xsetroot
 x11-base/xorg-server
 x11-libs/libXft
