@@ -10,12 +10,15 @@ dev-vcs/git
 dev-vcs/rcs
 media-fonts/dejavu
 media-sound/alsa-utils
+media-video/ffmpeg
+media-video/mpv
 net-analyzer/iftop
 net-analyzer/netcat
 net-analyzer/speedtest-cli
 net-dns/bind-tools
 net-misc/dhcpcd
 net-misc/socat
+net-misc/youtube-dl
 net-wireless/iw
 net-wireless/wpa_supplicant
 sys-boot/grub:2
