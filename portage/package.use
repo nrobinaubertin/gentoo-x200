@@ -19,4 +19,4 @@
 # firefox custom use
 >=www-client/firefox-58.0.1 eme-free -gmp-autoupdate -neon 
 # ffmpeg with https
->=media-video/ffmpeg-3.3.6 openssl gnutls
+#>=media-video/ffmpeg-3.3.6 openssl gnutls

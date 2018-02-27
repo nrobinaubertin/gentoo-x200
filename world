@@ -2,6 +2,7 @@ app-admin/sudo
 app-arch/unzip
 app-editors/neovim
 app-emulation/docker
+app-emulation/docker-compose
 app-misc/abduco
 app-misc/ranger
 app-misc/trash-cli
@@ -10,7 +11,6 @@ dev-vcs/git
 dev-vcs/rcs
 media-fonts/dejavu
 media-sound/alsa-utils
-media-video/ffmpeg
 media-video/mpv
 net-analyzer/iftop
 net-analyzer/netcat
@@ -30,7 +30,6 @@ sys-kernel/gentoo-sources
 sys-power/acpi
 sys-process/htop
 sys-process/iotop
-www-client/elinks
 www-client/firefox
 x11-apps/xsetroot
 x11-base/xorg-server
