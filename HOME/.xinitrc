@@ -2,7 +2,7 @@
 
 # statusbar
 while true; do
-    xsetroot -name "$( date +"%F %R" )"
+    xsetroot -name "$(${HOME}/bin/get full_status)"
     sleep 1m
 done &
 
