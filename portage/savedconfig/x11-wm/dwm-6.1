@@ -41,6 +41,7 @@ static const Layout layouts[] = {
 };
 
 static void togglesound(const Arg *arg);
+static void alternatescreen(const Arg *arg);
 static void changeredshift(const Arg *arg);
 static void zoomswap(const Arg *arg);
 
@@ -84,6 +85,7 @@ static Key keys[] = {
 	{ WINKEY,                       XK_Tab,                         zoomswap,           {0} },
 	{ WINKEY,                       XK_b,                           togglebar,          {0} },
 	{ WINKEY,	                    XK_r,                           changeredshift,     {.i = +1 } },
+	{ WINKEY,	                    XK_s,                           alternatescreen,    {0} },
 	{ WINKEY|ShiftMask,	            XK_r,                           changeredshift,     {.i = -1 } },
 	{ WINKEY|ShiftMask,             XK_q,                           quit,               {0} },
 	{ WINKEY|ShiftMask,             XK_c,                           killclient,         {0} },
@@ -141,6 +143,19 @@ static Button buttons[] = {
 	// { ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	// { ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
+
+// funtion that alternates between LVDS1 (laptop screen) and VGA1 (VGA output)
+static int screen_id = 0;
+void
+alternatescreen(const Arg *arg)
+{
+    if (screen_id % 2 == 0) {
+        system("xrandr --output LVDS1 --auto && xrandr --output VGA1 --off");
+    } else {
+        system("xrandr --output VGA1 --auto && xrandr --output LVDS1 --off");
+    }
+    screen_id++;
+}
 
 // function that controls the redshift status
 static int redShift = 0;
