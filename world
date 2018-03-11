@@ -18,6 +18,7 @@ net-analyzer/speedtest-cli
 net-dns/bind-tools
 net-misc/dhcpcd
 net-misc/socat
+net-misc/whois
 net-misc/youtube-dl
 net-wireless/iw
 net-wireless/wpa_supplicant
