@@ -2,7 +2,7 @@
 
 # statusbar
 while true; do
-    xsetroot -name "$(${HOME}/bin/get full_status)"
+    xsetroot -name "$(${HOME}/bin/get status '|')"
     sleep 1m
 done &
 
