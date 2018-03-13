@@ -7,6 +7,7 @@ app-misc/abduco
 app-misc/ranger
 app-misc/trash-cli
 app-portage/gentoolkit
+dev-lang/php
 dev-vcs/git
 dev-vcs/rcs
 media-fonts/dejavu
@@ -32,6 +33,7 @@ sys-power/acpi
 sys-process/htop
 sys-process/iotop
 www-client/firefox
+x11-apps/xbacklight
 x11-apps/xrandr
 x11-apps/xsetroot
 x11-base/xorg-server
