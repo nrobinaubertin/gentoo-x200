@@ -1,4 +1,4 @@
-/* 
+/*
  * user.js
  * Maintainer: Niels Robin-Aubertin @nrobinaubertin niels.fr
  * Good place to start creating your own user.js : https://github.com/ghacksuserjs/ghacks-user.js
@@ -11,7 +11,7 @@
  *  - try to use "safe" settings only
  */
 
-/* 
+/*
  * @Niels
  * this user_pref is used to know which section contains the faulty parameter
  * since firefox stops scanning user.js when it encounters an error, we can use this user_pref to locate it
@@ -238,3 +238,88 @@ user_pref("urlclassifier.trackingTable", "test-track-simple,base-track-digest256
 /* 0424: disable Mozilla's tracking protection and Flash blocklist updates ***/
    // user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
    // user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
+
+/*** 0500: SYSTEM EXTENSIONS / EXPERIMENTS
+     System extensions are a method for shipping extensions, considered to be
+     built-in features to Firefox, that are hidden from the about:addons UI.
+     To view your system extensions go to about:support, they are listed under "Firefox Features"
+
+     Some system extensions have no on-off prefs. Instead you can manually remove them. Note that app
+     updates will restore them. They may also be updated and possibly restored automatically (see 0505)
+     * Portable: "...\App\Firefox64\browser\features\" (or "App\Firefox\etc" for 32bit)
+     * Windows: "...\Program Files\Mozilla\browser\features" (or "Program Files (X86)\etc" for 32bit)
+     * Mac: "...\Applications\Firefox\Contents\Resources\browser\features\"
+            [NOTE] On Mac you can right-click on the application and select "Show Package Contents"
+     * Linux: "/usr/lib/firefox/browser/features" (or similar)
+
+     [1] https://firefox-source-docs.mozilla.org/toolkit/mozapps/extensions/addon-manager/SystemAddons.html
+     [2] https://dxr.mozilla.org/mozilla-central/source/browser/extensions
+***/
+user_pref("_user.js.parrot", "0500 syntax error");
+/* 0501: disable experiments
+ * [1] https://wiki.mozilla.org/Telemetry/Experiments ***/
+user_pref("experiments.enabled", false);
+user_pref("experiments.manifest.uri", "");
+user_pref("experiments.supported", false);
+user_pref("experiments.activeExperiment", false);
+/* 0502: disable Mozilla permission to silently opt you into tests ***/
+user_pref("network.allow-experiments", false);
+/* 0505: block URL used for system extension updates (FF44+)
+ * [NOTE] You will not get any system extension updates except when you update Firefox ***/
+   // user_pref("extensions.systemAddon.update.url", "");
+/* 0506: disable PingCentre telemetry (used in several system extensions) (FF57+)
+ * Currently blocked by 'datareporting.healthreport.uploadEnabled' (see 0333) ***/
+user_pref("browser.ping-centre.telemetry", false);
+/* 0510: disable Pocket (FF39+)
+ * Pocket is a third party (now owned by Mozilla) "save for later" cloud service
+ * [1] https://en.wikipedia.org/wiki/Pocket_(application)
+ * [2] https://www.gnu.gl/blog/Posts/multiple-vulnerabilities-in-pocket/ ***/
+user_pref("extensions.pocket.enabled", false);
+/* 0511: disable FlyWeb (FF49+)
+ * Flyweb is a set of APIs for advertising and discovering local-area web servers
+ * [1] https://flyweb.github.io/
+ * [2] https://wiki.mozilla.org/FlyWeb/Security_scenarios
+ * [3] https://www.ghacks.net/2016/07/26/firefox-flyweb/ ***/
+user_pref("dom.flyweb.enabled", false);
+/* 0512: disable Shield (FF53+)
+ * Shield is an telemetry system (including Heartbeat) that can also push and test "recipes"
+ * [1] https://wiki.mozilla.org/Firefox/Shield
+ * [2] https://github.com/mozilla/normandy ***/
+user_pref("extensions.shield-recipe-client.enabled", false);
+user_pref("extensions.shield-recipe-client.api_url", "");
+/* 0513: disable Follow On Search (FF53+)
+ * Just DELETE the XPI file in your system extensions directory
+ * [1] https://blog.mozilla.org/data/2017/06/05/measuring-search-in-firefox/ ***/
+/* 0514: disable Activity Stream (FF54+)
+ * Activity Stream replaces "New Tab" with one based on metadata and browsing behavior,
+ * and includes telemetry as well as web content such as snippets and "spotlight"
+ * [1] https://wiki.mozilla.org/Firefox/Activity_Stream
+ * [2] https://www.ghacks.net/2016/02/15/firefox-mockups-show-activity-stream-new-tab-page-and-share-updates/ ***/
+user_pref("browser.newtabpage.activity-stream.enabled", false);
+user_pref("browser.library.activity-stream.enabled", false); // (FF57+)
+/* 0515: disable Screenshots (FF55+)
+ * [1] https://github.com/mozilla-services/screenshots
+ * [2] https://www.ghacks.net/2017/05/28/firefox-screenshots-integrated-in-firefox-nightly/ ***/
+   // user_pref("extensions.screenshots.disabled", true);
+/* 0516: disable Onboarding (FF55+)
+ * Onboarding is an interactive tour/setup for new installs/profiles and features. Every time
+ * about:home or about:newtab is opened, the onboarding overlay is injected into that page
+ * [NOTE] Onboarding uses Google Analytics [2], and leaks resource://URIs [3]
+ * [1] https://wiki.mozilla.org/Firefox/Onboarding
+ * [2] https://github.com/mozilla/onboard/commit/db4d6c8726c89a5d6a241c1b1065827b525c5baf
+ * [3] https://bugzilla.mozilla.org/show_bug.cgi?id=863246#c154 ***/
+user_pref("browser.onboarding.enabled", false);
+/* 0517: disable Form Autofill (FF55+)
+ * [SETTING-56+] Options>Privacy & Security>Forms & Passwords>Enable Profile Autofill
+ * [SETTING-ESR] Options>Privacy>Forms & Passwords>Enable Profile Autofill
+ * [NOTE] Stored data is NOT secure (uses a JSON file)
+ * [NOTE] Heuristics controls Form Autofill on forms without @autocomplete attributes
+ * [1] https://wiki.mozilla.org/Firefox/Features/Form_Autofill
+ * [2] https://www.ghacks.net/2017/05/24/firefoxs-new-form-autofill-is-awesome/ ***/
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.available", "off"); // (FF56+)
+user_pref("extensions.formautofill.creditCards.enabled", false); // (FF56+)
+user_pref("extensions.formautofill.heuristics.enabled", false);
+/* 0518: disable Web Compatibility Reporter (FF56+)
+ * Web Compatibility Reporter adds a "Report Site Issue" button to send data to Mozilla ***/
+user_pref("extensions.webcompat-reporter.enabled", false);
