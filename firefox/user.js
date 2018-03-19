@@ -323,3 +323,38 @@ user_pref("extensions.formautofill.heuristics.enabled", false);
 /* 0518: disable Web Compatibility Reporter (FF56+)
  * Web Compatibility Reporter adds a "Report Site Issue" button to send data to Mozilla ***/
 user_pref("extensions.webcompat-reporter.enabled", false);
+
+/*** 0600: BLOCK IMPLICIT OUTBOUND [not explicitly asked for - e.g. clicked on] ***/
+user_pref("_user.js.parrot", "0600 syntax error");
+/* 0601: disable link prefetching
+ * [1] https://developer.mozilla.org/docs/Web/HTTP/Link_prefetching_FAQ ***/
+user_pref("network.prefetch-next", false);
+/* 0602: disable DNS prefetching
+ * [1] https://www.ghacks.net/2013/04/27/firefox-prefetching-what-you-need-to-know/
+ * [2] https://developer.mozilla.org/docs/Web/HTTP/Headers/X-DNS-Prefetch-Control ***/
+user_pref("network.dns.disablePrefetch", true);
+user_pref("network.dns.disablePrefetchFromHTTPS", true); // (hidden pref)
+/* 0603a: disable Seer/Necko
+ * [1] https://developer.mozilla.org/docs/Mozilla/Projects/Necko
+ * [2] https://www.ghacks.net/2014/05/11/seer-disable-firefox/ ***/
+user_pref("network.predictor.enabled", false);
+/* 0603b: disable more Necko/Captive Portal
+ * [1] https://en.wikipedia.org/wiki/Captive_portal
+ * [2] https://wiki.mozilla.org/Necko/CaptivePortal
+ * [3] https://trac.torproject.org/projects/tor/ticket/21790 ***/
+user_pref("captivedetect.canonicalURL", "");
+user_pref("network.captive-portal-service.enabled", false); // (FF52+)
+/* 0605: disable link-mouseover opening connection to linked server
+ * [1] https://news.slashdot.org/story/15/08/14/2321202/how-to-quash-firefoxs-silent-requests
+ * [2] https://www.ghacks.net/2015/08/16/block-firefox-from-connecting-to-sites-when-you-hover-over-links/ ***/
+user_pref("network.http.speculative-parallel-limit", 0);
+/* 0606: disable pings (but enforce same host in case)
+ * [1] http://kb.mozillazine.org/Browser.send_pings
+ * [2] http://kb.mozillazine.org/Browser.send_pings.require_same_host ***/
+user_pref("browser.send_pings", false);
+user_pref("browser.send_pings.require_same_host", true);
+/* 0607: disable links launching Windows Store on Windows 8/8.1/10 [WINDOWS]
+ * [1] https://www.ghacks.net/2016/03/25/block-firefox-chrome-windows-store/ ***/
+user_pref("network.protocol-handler.external.ms-windows-store", false);
+/* 0608: disable predictor / prefetching (FF48+) ***/
+user_pref("network.predictor.enable-prefetch", false);
