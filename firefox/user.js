@@ -358,3 +358,55 @@ user_pref("browser.send_pings.require_same_host", true);
 user_pref("network.protocol-handler.external.ms-windows-store", false);
 /* 0608: disable predictor / prefetching (FF48+) ***/
 user_pref("network.predictor.enable-prefetch", false);
+
+/*** 0800: LOCATION BAR / SEARCH BAR / SUGGESTIONS / HISTORY / FORMS [SETUP]
+     If you are in a private environment (no unwanted eyeballs) and your device is private
+     (restricted access), and the device is secure when unattended (locked, encrypted, forensic
+     hardened), then items 0850 and above can be relaxed in return for more convenience and
+     functionality. Likewise, you may want to check the items cleared on shutdown in section 2800.
+     [NOTE] The urlbar is also commonly referred to as the location bar and address bar
+     #Required reading [#] https://xkcd.com/538/
+ ***/
+user_pref("_user.js.parrot", "0800 syntax error");
+/* 0801: disable location bar using search - PRIVACY
+ * don't leak typos to a search engine, give an error message instead ***/
+user_pref("keyword.enabled", false);
+/* 0802: disable location bar domain guessing - PRIVACY/SECURITY
+ * domain guessing intercepts DNS "hostname not found errors" and resends a
+ * request (e.g. by adding www or .com). This is inconsistent use (e.g. FQDNs), does not work
+ * via Proxy Servers (different error), is a flawed use of DNS (TLDs: why treat .com
+ * as the 411 for DNS errors?), privacy issues (why connect to sites you didn't
+ * intend to), can leak sensitive data (e.g. query strings: e.g. Princeton attack),
+ * and is a security risk (e.g. common typos & malicious sites set up to exploit this) ***/
+user_pref("browser.fixup.alternate.enabled", false);
+/* 0803: display all parts of the url in the location bar - helps SECURITY ***/
+user_pref("browser.urlbar.trimURLs", false);
+/* 0804: limit history leaks via enumeration (PER TAB: back/forward) - PRIVACY
+ * This is a PER TAB session history. You still have a full history stored under all history
+ * default=50, minimum=1=currentpage, 2 is the recommended minimum as some pages
+ * use it as a means of referral (e.g. hotlinking), 4 or 6 or 10 may be more practical ***/
+user_pref("browser.sessionhistory.max_entries", 10);
+/* 0805: disable CSS querying page history - CSS history leak - PRIVACY
+ * [NOTE] This has NEVER been fully "resolved": in Mozilla/docs it is stated it's
+ * only in 'certain circumstances', also see latest comments in [2]
+ * [TEST] http://lcamtuf.coredump.cx/yahh/ (see github wiki APPENDIX C on how to use)
+ * [1] https://dbaron.org/mozilla/visited-privacy
+ * [2] https://bugzilla.mozilla.org/show_bug.cgi?id=147777
+ * [3] https://developer.mozilla.org/docs/Web/CSS/Privacy_and_the_:visited_selector ***/
+user_pref("layout.css.visited_links_enabled", false);
+/* 0806: disable displaying javascript in history URLs - SECURITY ***/
+user_pref("browser.urlbar.filter.javascript", true);
+/* 0807: disable search bar LIVE search suggestions - PRIVACY
+ * [SETTING] Options>Search>Provide search suggestions ***/
+user_pref("browser.search.suggest.enabled", false);
+/* 0808: disable location bar LIVE search suggestions (requires 0807 = true) - PRIVACY
+ * Also disable the location bar prompt to enable/disable or learn more about it.
+ * [SETTING] Options>Search>Show search suggestions in address bar results ***/
+user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.urlbar.userMadeSearchSuggestionsChoice", true); // (FF41+)
+/* 0809: disable location bar suggesting "preloaded" top websites (FF54+)
+ * [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1211726 ***/
+user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
+/* 0810: disable location bar making speculative connections (FF56+)
+ * [1] https://bugzilla.mozilla.org/show_bug.cgi?id=1348275 ***/
+user_pref("browser.urlbar.speculativeConnect.enabled", false);
