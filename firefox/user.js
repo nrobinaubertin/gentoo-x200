@@ -368,9 +368,6 @@ user_pref("network.predictor.enable-prefetch", false);
      #Required reading [#] https://xkcd.com/538/
  ***/
 user_pref("_user.js.parrot", "0800 syntax error");
-/* 0801: disable location bar using search - PRIVACY
- * don't leak typos to a search engine, give an error message instead ***/
-user_pref("keyword.enabled", false);
 /* 0802: disable location bar domain guessing - PRIVACY/SECURITY
  * domain guessing intercepts DNS "hostname not found errors" and resends a
  * request (e.g. by adding www or .com). This is inconsistent use (e.g. FQDNs), does not work
