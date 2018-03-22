@@ -8,6 +8,7 @@ app-misc/ranger
 app-misc/trash-cli
 app-portage/gentoolkit
 dev-lang/php
+dev-libs/libusb
 dev-vcs/git
 dev-vcs/rcs
 media-fonts/dejavu
@@ -23,6 +24,7 @@ net-misc/whois
 net-misc/youtube-dl
 net-wireless/iw
 net-wireless/wpa_supplicant
+sys-apps/keyutils
 sys-boot/grub:2
 sys-fs/dfc
 sys-fs/exfat-utils
