@@ -3,5 +3,7 @@ cargo-update v1.4.1:
     cargo-install-update-config
 exa v0.8.0:
     exa
+fd-find v7.0.0:
+    fd
 ripgrep v0.8.1:
     rg
