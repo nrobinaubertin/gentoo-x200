@@ -53,3 +53,5 @@
 =net-misc/wget-1.19.4 ~amd64
 # required by libressl
 >=dev-libs/libressl-2.2.0
+# required by dev-lang/nim (argument)
+=dev-lang/nim-0.18.0 ~amd64

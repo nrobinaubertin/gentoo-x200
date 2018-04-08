@@ -7,11 +7,13 @@ app-misc/abduco
 app-misc/ranger
 app-misc/trash-cli
 app-portage/gentoolkit
+dev-lang/nim
 dev-lang/php
 dev-libs/libusb
 dev-vcs/git
 dev-vcs/rcs
 media-fonts/dejavu
+media-gfx/imagemagick
 media-sound/alsa-utils
 media-video/mpv
 net-analyzer/iftop
