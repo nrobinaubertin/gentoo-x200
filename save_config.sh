@@ -24,3 +24,6 @@ cp /etc/portage/package.accept_keywords portage
 
 # etc
 cp /etc/hosts etc
+
+# custom ebuilds
+cp -r /usr/local/portage/ ebuilds/
