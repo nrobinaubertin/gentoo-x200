@@ -19,8 +19,7 @@ cargo install --list > cargo/list.txt
 cp -r /etc/portage/savedconfig portage
 cp -r /etc/portage/repos.conf portage
 cp /etc/portage/make.conf portage
-cp /etc/portage/package.use portage
-cp /etc/portage/package.accept_keywords portage
+cp /etc/portage/package.* portage
 
 # etc
 cp /etc/hosts etc
