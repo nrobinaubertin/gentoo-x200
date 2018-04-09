@@ -16,6 +16,7 @@
 # IPv4 and IPv6 localhost aliases
 127.0.0.1       localhost
 ::1	            localhost
+127.0.0.1       zusam.local
 127.0.0.1	    x200.localhost x200 localhost
 127.0.0.1       ommi.local api.ommi.local
 
