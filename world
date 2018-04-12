@@ -31,6 +31,7 @@ sys-boot/grub:2
 sys-fs/dfc
 sys-fs/exfat-utils
 sys-fs/ntfs3g
+sys-fs/ps_mem
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
 sys-power/acpi
