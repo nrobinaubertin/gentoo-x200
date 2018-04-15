@@ -5,6 +5,9 @@ mkdir -p HOME portage cargo kernel
 # kernel
 cp /usr/src/linux/.config kernel/
 
+# grub
+cp /etc/default/grub grub/
+
 # world
 cp /var/lib/portage/world world
 
