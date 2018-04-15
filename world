@@ -27,6 +27,7 @@ net-misc/youtube-dl
 net-wireless/iw
 net-wireless/wpa_supplicant
 sys-apps/keyutils
+sys-apps/lm_sensors
 sys-boot/grub:2
 sys-fs/dfc
 sys-fs/exfat-utils
