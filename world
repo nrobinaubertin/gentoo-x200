@@ -12,6 +12,7 @@ dev-lang/php
 dev-libs/libusb
 dev-vcs/git
 dev-vcs/rcs
+mail-client/neomutt
 media-fonts/dejavu
 media-gfx/imagemagick
 media-sound/alsa-utils
@@ -31,6 +32,7 @@ sys-apps/lm_sensors
 sys-boot/grub:2
 sys-fs/dfc
 sys-fs/exfat-utils
+sys-fs/fuse-exfat
 sys-fs/ntfs3g
 sys-fs/ps_mem
 sys-kernel/genkernel
