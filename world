@@ -8,7 +8,6 @@ app-misc/ranger
 app-misc/trash-cli
 app-portage/gentoolkit
 dev-lang/nim
-dev-lang/php
 dev-libs/libusb
 dev-vcs/git
 dev-vcs/rcs
@@ -49,4 +48,5 @@ x11-libs/libXft
 x11-misc/dmenu
 x11-misc/redshift
 x11-misc/slock
+x11-terms/st
 x11-wm/dwm

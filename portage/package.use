@@ -21,7 +21,7 @@
 # ffmpeg
 >=media-video/ffmpeg-3.3.6 mp3 x264 webp
 # php
->=dev-lang/php-7.1.13 -berkdb -bzip2 -crypt curl -filter gd -gdbm intl -ipv6 zip
+#>=dev-lang/php-7.1.13 -berkdb -bzip2 -crypt curl -filter gd -gdbm intl -ipv6 zip
 # imagemagick
 >=media-gfx/imagemagick-7.0.7.19 jpeg png
 # dfc
