@@ -57,3 +57,5 @@
 =dev-lang/nim-0.18.0 ~amd64
 # required by mail-client/neomutt (argument)
 =mail-client/neomutt-20180323 ~amd64
+# required by =sys-fs/dfc-3.1.1 (argument)
+=sys-fs/dfc-3.1.1 ~amd64

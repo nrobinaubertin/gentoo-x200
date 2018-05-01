@@ -24,3 +24,5 @@
 >=dev-lang/php-7.1.13 -berkdb -bzip2 -crypt curl -filter gd -gdbm intl -ipv6 zip
 # imagemagick
 >=media-gfx/imagemagick-7.0.7.19 jpeg png
+# dfc
+>=sys-fs/dfc-3.1.1
