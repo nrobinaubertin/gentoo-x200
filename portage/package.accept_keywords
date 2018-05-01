@@ -57,5 +57,3 @@
 =dev-lang/nim-0.18.0 ~amd64
 # required by mail-client/neomutt (argument)
 =mail-client/neomutt-20180323 ~amd64
-# required by =x11-terms/st-0.8.1-r1 (argument)
-=x11-terms/st-0.8.1-r1 ~amd64

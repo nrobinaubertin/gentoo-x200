@@ -1,3 +1,2 @@
 devlibs/openssl
 sys-fs/dfc
-x11-terms/st
