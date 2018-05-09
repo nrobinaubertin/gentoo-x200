@@ -4,11 +4,13 @@ app-editors/neovim
 app-emulation/docker
 app-emulation/docker-compose
 app-misc/abduco
+app-misc/jq
 app-misc/ranger
 app-misc/trash-cli
 app-portage/gentoolkit
 dev-lang/nim
 dev-libs/libusb
+dev-util/ctags
 dev-vcs/git
 dev-vcs/rcs
 mail-client/neomutt
