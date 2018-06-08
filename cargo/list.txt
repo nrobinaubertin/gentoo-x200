@@ -1,4 +1,6 @@
-cargo-update v1.4.1:
+bat v0.4.1:
+    bat
+cargo-update v1.5.2:
     cargo-install-update
     cargo-install-update-config
 exa v0.8.0:
