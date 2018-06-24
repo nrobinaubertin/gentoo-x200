@@ -26,3 +26,7 @@
 >=media-gfx/imagemagick-7.0.7.19 jpeg png
 # dfc
 >=sys-fs/dfc-3.1.1
+# required by sys-kernel/genkernel-3.5.3.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=sys-apps/util-linux-2.30.2-r1 static-libs
