@@ -5,11 +5,13 @@ app-emulation/docker
 app-emulation/docker-compose
 app-misc/abduco
 app-misc/jq
-app-misc/ranger
 app-misc/trash-cli
 app-portage/gentoolkit
 dev-lang/nim
 dev-libs/libusb
+dev-python/docker-py
+dev-python/docker-pycreds
+dev-python/pyxattr
 dev-util/ctags
 dev-vcs/git
 dev-vcs/rcs
