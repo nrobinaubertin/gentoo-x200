@@ -21,7 +21,6 @@ media-gfx/imagemagick
 media-sound/alsa-utils
 media-video/mpv
 net-analyzer/iftop
-net-analyzer/netcat
 net-analyzer/speedtest-cli
 net-dns/bind-tools
 net-misc/dhcpcd
