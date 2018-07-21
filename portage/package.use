@@ -30,3 +30,6 @@
 # required by @selected
 # required by @world (argument)
 >=sys-apps/util-linux-2.30.2-r1 static-libs
+# required by dev-python/ipython-5.4.1-r1::gentoo[python_targets_python3_5]
+# required by dev-python/ipyparallel-6.0.2-r1::gentoo[python_targets_python2_7]
+>=dev-lang/python-3.5.5:3.5 sqlite

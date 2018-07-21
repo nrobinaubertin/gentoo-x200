@@ -18,7 +18,7 @@
 # required by @world (argument)
 >=media-libs/libpng-1.6.34 ~amd64
 # required by app-emulation/docker-compose (argument)
-=app-emulation/docker-compose-1.19.0 ~amd64
+>=app-emulation/docker-compose-1.19.0 ~amd64
 # required by app-emulation/docker-compose-1.19.0::gentoo
 # required by app-emulation/docker-compose (argument)
 >=dev-python/texttable-0.9.1 ~amd64
@@ -45,3 +45,5 @@
 # required by @selected
 # required by @world (argument)
 >=dev-python/docker-py-3.2.1 ~amd64
+# ansible
+>=app-admin/ansible-2.6.1 ~amd64
