@@ -20,6 +20,7 @@
 127.0.0.1       elzire.local
 127.0.0.1	    x200.localhost x200 localhost
 127.0.0.1       ommi.local api.ommi.local
+192.168.1.16     aspire
 
 #
 # Imaginary network.
