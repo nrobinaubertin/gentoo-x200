@@ -33,3 +33,9 @@
 # required by dev-python/ipython-5.4.1-r1::gentoo[python_targets_python3_5]
 # required by dev-python/ipyparallel-6.0.2-r1::gentoo[python_targets_python2_7]
 >=dev-lang/python-3.5.5:3.5 sqlite
+# required by dev-python/ipython-5.4.1-r1::gentoo[python_targets_python3_6]
+# required by dev-python/netaddr-0.7.19::gentoo[cli]
+# required by app-admin/ansible-2.6.1::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-lang/python-3.6.5 sqlite
