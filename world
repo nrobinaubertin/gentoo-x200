@@ -24,6 +24,7 @@ media-video/mpv
 net-analyzer/iftop
 net-analyzer/speedtest-cli
 net-dns/bind-tools
+net-fs/cifs-utils
 net-misc/dhcpcd
 net-misc/socat
 net-misc/whois

@@ -47,3 +47,6 @@
 >=dev-python/docker-py-3.2.1 ~amd64
 # ansible
 >=app-admin/ansible-2.6.1 ~amd64
+# required by samba
+# lower version has compilation error with libressl
+>=net-nds/openldap-2.4.45 ~amd64
