@@ -25,6 +25,7 @@ net-analyzer/iftop
 net-analyzer/speedtest-cli
 net-dns/bind-tools
 net-fs/cifs-utils
+net-mail/offlineimap
 net-misc/dhcpcd
 net-misc/socat
 net-misc/whois
@@ -52,5 +53,3 @@ x11-libs/libXft
 x11-misc/dmenu
 x11-misc/redshift
 x11-misc/slock
-x11-terms/st
-x11-wm/dwm
