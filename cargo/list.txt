@@ -1,11 +1,11 @@
-bat v0.4.1:
+bat v0.6.1:
     bat
-cargo-update v1.6.1:
+cargo-update v1.6.2:
     cargo-install-update
     cargo-install-update-config
 exa v0.8.0:
     exa
-fd-find v7.0.0:
+fd-find v7.1.0:
     fd
-ripgrep v0.8.1:
+ripgrep v0.9.0:
     rg
