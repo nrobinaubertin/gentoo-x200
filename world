@@ -35,6 +35,7 @@ net-wireless/wpa_supplicant
 sys-apps/keyutils
 sys-apps/lm_sensors
 sys-boot/grub:2
+sys-devel/clang
 sys-devel/gdb
 sys-fs/dfc
 sys-fs/exfat-utils
