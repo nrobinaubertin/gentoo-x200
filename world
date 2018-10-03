@@ -1,6 +1,7 @@
 app-admin/ansible
 app-admin/sudo
 app-arch/unzip
+app-backup/restic
 app-editors/neovim
 app-emulation/docker
 app-emulation/docker-compose
@@ -12,8 +13,10 @@ dev-lang/nim
 dev-libs/libusb
 dev-python/docker-py
 dev-python/docker-pycreds
+dev-python/pip
 dev-python/pyxattr
 dev-util/ctags
+dev-util/valgrind
 dev-vcs/git
 dev-vcs/rcs
 mail-client/neomutt
@@ -43,6 +46,7 @@ sys-fs/fuse-exfat
 sys-fs/ntfs3g
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
+sys-libs/glibc
 sys-power/acpi
 sys-process/htop
 sys-process/iotop
