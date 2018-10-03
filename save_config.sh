@@ -1,6 +1,6 @@
 #!/bin/sh
 
-mkdir -p HOME portage cargo kernel
+mkdir -p HOME portage cargo kernel pip
 
 # kernel
 cp /usr/src/linux/.config kernel/
@@ -29,3 +29,6 @@ cp /etc/hosts etc
 
 # custom ebuilds
 cp -r /usr/local/portage/ ebuilds/
+
+# save pip installs
+pip freeze --user > pip/requirements.txt
