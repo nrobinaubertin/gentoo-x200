@@ -1,2 +1,0 @@
-devlibs/openssl
-x11-terms/st

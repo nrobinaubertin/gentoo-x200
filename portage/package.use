@@ -1,55 +1,20 @@
-# required by app-editors/neovim-0.2.2-r1::gentoo
-# required by app-editors/neovim (argument)
->=dev-lua/mpack-1.0.4 luajit
-# required by app-editors/neovim-0.2.2-r1::gentoo
-# required by app-editors/neovim (argument)
->=dev-lua/lpeg-1.0.1 luajit
-# required by www-client/firefox-52.6.0::gentoo
-# required by www-client/firefox (argument)
->=media-libs/libpng-1.6.29 apng
-# required by x11-libs/gtk+-3.22.19::gentoo
-# required by x11-themes/adwaita-icon-theme-3.24.0::gentoo
-# required by virtual/freedesktop-icon-theme-0-r3::gentoo
-# required by www-client/firefox-52.6.0::gentoo
-# required by www-client/firefox (argument)
->=x11-libs/cairo-1.14.12 X
-# required by www-client/firefox-52.6.0::gentoo
-# required by www-client/firefox (argument)
->=dev-lang/python-2.7.14-r1:2.7 sqlite
-# firefox custom use
->=www-client/firefox-59.0.2 eme-free -gmp-autoupdate -neon
-# ffmpeg
+# FFMPEG
 >=media-video/ffmpeg-3.3.6 mp3 x264 webp
-# php
-#>=dev-lang/php-7.1.13 -berkdb -bzip2 -crypt curl -filter gd -gdbm intl -ipv6 zip
-# imagemagick
+# IMAGEMAGICK
 >=media-gfx/imagemagick-7.0.7.19 jpeg png
-# dfc
+# DFC
 >=sys-fs/dfc-3.1.1
-# required by sys-kernel/genkernel-3.5.3.3::gentoo
-# required by @selected
-# required by @world (argument)
+# GENKERNEL
 >=sys-apps/util-linux-2.30.2-r1 static-libs
-# required by dev-python/ipython-5.4.1-r1::gentoo[python_targets_python3_5]
-# required by dev-python/ipyparallel-6.0.2-r1::gentoo[python_targets_python2_7]
->=dev-lang/python-3.5.5:3.5 sqlite
-# required by dev-python/ipython-5.4.1-r1::gentoo[python_targets_python3_6]
-# required by dev-python/netaddr-0.7.19::gentoo[cli]
-# required by app-admin/ansible-2.6.1::gentoo
-# required by @selected
-# required by @world (argument)
->=dev-lang/python-3.6.5 sqlite
-# required by sys-libs/ldb-1.1.29-r1::gentoo
-# required by net-fs/samba-4.5.16::gentoo
-# required by media-video/ffmpeg-3.3.6::gentoo[samba]
-# required by media-video/mpv-0.27.2::gentoo
-# required by @selected
-# required by @world (argument)
->=sys-libs/tdb-1.3.13 python
-# required by sys-libs/ldb-1.1.29-r1::gentoo
-# required by net-fs/samba-4.5.16::gentoo
-# required by media-video/ffmpeg-3.3.6::gentoo[samba]
-# required by media-video/mpv-0.27.2::gentoo
-# required by @selected
-# required by @world (argument)
+# PYTHON
+>=dev-lang/python-2.7:2.7 sqlite
+>=dev-lang/python-3.6 sqlite
+# BINDIST ISSUES
+>=dev-libs/openssl-1.0.2p -bindist
+>=net-misc/openssh-7.7_p1-r9 -bindist
+# FIREFOX, FFMPEG, SAMBA
 >=sys-libs/tevent-0.9.31-r1 python
+>=sys-libs/tdb-1.3.16 python
+# FIREFOX
+>=x11-libs/cairo-1.14.12 X
+>=media-libs/libpng-1.6.34 apng
