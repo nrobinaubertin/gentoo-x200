@@ -51,6 +51,7 @@ sys-power/acpi
 sys-process/htop
 sys-process/iotop
 www-client/firefox
+x11-apps/mesa-progs
 x11-apps/xbacklight
 x11-apps/xrandr
 x11-apps/xsetroot
