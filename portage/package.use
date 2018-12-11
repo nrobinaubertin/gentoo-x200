@@ -18,3 +18,9 @@
 # FIREFOX
 >=x11-libs/cairo-1.14.12 X
 >=media-libs/libpng-1.6.34 apng
+# required by media-video/ffmpeg-3.3.6::gentoo[samba]
+# required by virtual/ffmpeg-9-r2::gentoo[-libav]
+# required by www-client/firefox-63.0.3::gentoo
+# required by @selected
+# required by @world (argument)
+>=net-fs/samba-4.8.6-r2 client
