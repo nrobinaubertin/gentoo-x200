@@ -19,6 +19,7 @@
 user_pref("_user.js.parrot", "START");
 
 user_pref("privacy.resistFingerprinting", true);
+user_pref("privacy.firstparty.isolate", true);
 user_pref("identity.sync.tokenserver.uri", "https://firefox-syncserver.niels.fr/token/1.0/sync/1.5");
 user_pref("lightweightThemes.selectedThemeID", "firefox-compact-dark@mozilla.org");
 user_pref("browser.startup.homepage", "about:blank");
