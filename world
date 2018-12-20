@@ -9,6 +9,7 @@ app-misc/jq
 app-misc/trash-cli
 app-portage/gentoolkit
 app-shells/fzy
+app-text/tree
 dev-libs/libusb
 dev-libs/openssl
 dev-python/docker-py
@@ -21,6 +22,7 @@ dev-vcs/git
 dev-vcs/rcs
 media-fonts/dejavu
 media-gfx/imagemagick
+media-gfx/jpegoptim
 media-sound/alsa-utils
 media-video/mpv
 net-analyzer/iftop
