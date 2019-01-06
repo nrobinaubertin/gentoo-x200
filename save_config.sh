@@ -31,3 +31,11 @@ cp -r /usr/local/portage/ ebuilds/
 
 # save pip installs
 pip freeze --user > pip/requirements.txt
+
+# firefox
+for profile in $(find $HOME/.mozilla/firefox -maxdepth 1 -mindepth 1 -type d); do
+    profile_name="$(basename $profile)"
+    mkdir -p "firefox/$profile_name"
+    cp -r "$profile/chrome" "firefox/$profile_name/chrome"
+    cp "$profile/user.js" "firefox/$profile_name/user.js"
+done
