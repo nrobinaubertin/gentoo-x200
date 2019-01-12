@@ -2,7 +2,6 @@ app-admin/ansible
 app-admin/sudo
 app-arch/unzip
 app-backup/restic
-app-editors/neovim
 app-emulation/docker
 app-misc/abduco
 app-misc/jq
