@@ -36,13 +36,14 @@ net-misc/youtube-dl
 net-wireless/iw
 net-wireless/wpa_supplicant
 sys-apps/keyutils
-sys-apps/lm_sensors
+sys-apps/lm-sensors
 sys-boot/grub:2
 sys-devel/clang
 sys-devel/gdb
 sys-fs/dfc
 sys-fs/exfat-utils
 sys-fs/fuse-exfat
+sys-fs/ncdu
 sys-fs/ntfs3g
 sys-kernel/genkernel
 sys-kernel/gentoo-sources
@@ -61,3 +62,4 @@ x11-libs/libXft
 x11-misc/dmenu
 x11-misc/redshift
 x11-misc/slock
+x11-misc/xsel

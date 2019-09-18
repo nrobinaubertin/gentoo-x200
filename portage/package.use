@@ -2,8 +2,6 @@
 >=media-video/ffmpeg-3.3.6 mp3 x264 webp
 # IMAGEMAGICK
 >=media-gfx/imagemagick-7.0.7.19 jpeg png
-# DFC
->=sys-fs/dfc-3.1.1
 # GENKERNEL
 >=sys-apps/util-linux-2.30.2-r1 static-libs
 # PYTHON
@@ -24,3 +22,17 @@
 # required by @selected
 # required by @world (argument)
 >=net-fs/samba-4.8.6-r2 client
+# required by www-client/firefox-65.0::gentoo[system-libvpx]
+# required by @selected
+# required by @world (argument)
+>=media-libs/libvpx-1.7.0 postproc
+# required by www-client/firefox-65.0::gentoo[system-sqlite]
+# required by @selected
+# required by @world (argument)
+>=dev-db/sqlite-3.25.3 secure-delete
+# required by sys-devel/llvmgold-7::gentoo
+# required by sys-devel/llvm-7.0.0-r1::gentoo
+# required by www-client/firefox-60.7.2::gentoo[-clang]
+# required by @selected
+# required by @world (argument)
+>=sys-devel/llvm-7.1.0 gold

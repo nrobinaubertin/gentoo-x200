@@ -8,7 +8,3 @@
 >=app-misc/abduco-0.6 ~amd64
 # FZY
 >=app-shells/fzy-1.0 ~amd64
-# FIREFOX
->=www-client/firefox-63.0.1 ~amd64
-=dev-libs/nss-3.40 ~amd64
-=dev-util/cbindgen-0.6.6 ~amd64

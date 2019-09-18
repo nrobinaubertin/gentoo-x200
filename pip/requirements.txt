@@ -1,4 +1,14 @@
+autopep8==1.4
+beets==1.4.7
+jellyfish==0.6.1
+msgpack==0.6.0
+munkres==1.0.12
+musicbrainzngs==0.6
+mutagen==1.41.1
 neovim==0.3.1
 pipenv==2018.7.1
+pycodestyle==2.4.0
 pynvim==0.3.1
+Unidecode==1.0.23
 virtualenv==16.0.0
+virtualenv-clone==0.3.0
